@@ -1,26 +1,26 @@
 numpy==1.26.4
-scipy
-cython
-numba>=0.50.1
-matplotlib
+scipy>=1.14.1,<1.18
+cython>=3.3.0,<4
+numba>=0.50.1,<0.68
+matplotlib>=3.6.3,<3.11
 matplotlib-inline<=0.1.7
-seaborn
-scikit-learn
-h5py>=3.1.0
+seaborn>=0.13.2,<0.14
+scikit-learn>=1.7.2,<1.9
+h5py>=3.1.0,<4
 #pandas>=1.0.3, <=1.5.3
-pandas
-velocyto>=0.17
-umap-learn
-pyarrow>=0.17
-tqdm>=4.45
-igraph>=0.10.1
-louvain
+pandas>=1.5.3,<2.4
+velocyto @ git+https://github.com/PathGao/velocyto.py@pj13/packaging
+umap-learn>=0.5.12,<0.6
+pyarrow>=0.17,<21
+tqdm>=4.45,<5
+igraph>=0.10.1,<2
+louvain>=0.8.2,<0.9
 # louvain<=0.8.2 imports pkg_resources at module load, which setuptools >=81 stopped shipping by default.
 setuptools<81
-jupyter
-anndata>=0.7.5
-scanpy>=1.6
-joblib
-goatools
-genomepy>=0.8.4
-gimmemotifs>=0.14.4
+jupyter>=1.1.1,<2
+anndata>=0.7.5,<0.13
+scanpy>=1.6,<1.12
+joblib>=1.6.0,<2
+goatools>=1.6.4,<2
+genomepy>=0.8.4,<0.17
+gimmemotifs>=0.14.4,<0.19
